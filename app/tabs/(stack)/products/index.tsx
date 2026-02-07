@@ -2,7 +2,7 @@ import { View, Text, FlatList } from 'react-native'
 import React from 'react'
 import { products } from '@/store/products.store'
 import { Link, router } from 'expo-router'
-import CustomButton from '../../../components/shared/CustomButton';
+import CustomButton from '@/components/shared/CustomButton';
 
 const ProductsScreen = () => {
     return (
@@ -14,7 +14,7 @@ const ProductsScreen = () => {
 
                 <View className='flex flex-row justify-between mt-2'>
                     <Text className='font-work-black'>{item.price}</Text>
-                    <CustomButton children='Ver detalle' variant='text-only' color='primary' onPress={() => router.push(`/products/${item.id}`)}/>
+                    <CustomButton children='Ver detalle' variant='text-only' color='primary' onPress={() => router.push(`/tabs/products/${item.id}`)}/>
                 </View>
                 </View>
             )} />

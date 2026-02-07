@@ -5,6 +5,7 @@ const StackLayout = () => {
     return (
         <Stack screenOptions={{
             animation: 'fade',
+            headerShown: true,
             headerShadowVisible: false,
             statusBarStyle: 'dark',
             contentStyle: {
@@ -15,7 +16,6 @@ const StackLayout = () => {
             }
         }}>
             <Stack.Screen name='home/index' options={{ title: 'Inicio' }} />
-            {/* <Stack.Screen name='products/index' options={{title: 'Productos', animation: 'fade'}}/> */}
             <Stack.Screen name='products/index' options={{ title: 'Productos' }} />
             <Stack.Screen name='profile/index' options={{ title: 'Perfil' }} />
             <Stack.Screen name='settings/index' options={{ title: 'Ajustes' }} />
