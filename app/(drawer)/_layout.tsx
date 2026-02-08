@@ -12,11 +12,22 @@ const DrawerLayout = () => {
                 overlayColor: 'rgba(0, 0, 0, 0.4)',
                 drawerActiveTintColor: 'indigo',
                 headerShadowVisible: false,
+                // headerShown: false,
                 sceneStyle: {
                     backgroundColor: 'white'
                 }
             }}
         >
+            <Drawer.Screen
+                name="(tabs)"
+                options={{
+                    headerShown: false,
+                    drawerLabel: 'Tabs + Stack',
+                    title: 'Tabs + Stack',
+                    drawerIcon: ({ color, size }) => <Ionicons name='albums-outline' color={color} size={size} />,
+                }}
+            />
+
             <Drawer.Screen
                 name="user/index"
                 options={{
@@ -25,6 +36,7 @@ const DrawerLayout = () => {
                     drawerIcon: ({ color, size }) => <Ionicons name='person-circle-outline' color={color} size={size} />,
                 }}
             />
+
             <Drawer.Screen
                 name="schedule/index"
                 options={{

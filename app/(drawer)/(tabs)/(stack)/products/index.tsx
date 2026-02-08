@@ -14,7 +14,7 @@ const ProductsScreen = () => {
 
                 <View className='flex flex-row justify-between mt-2'>
                     <Text className='font-work-black'>{item.price}</Text>
-                    <CustomButton children='Ver detalle' variant='text-only' color='primary' onPress={() => router.push(`/tabs/products/${item.id}`)}/>
+                    <CustomButton children='Ver detalle' variant='text-only' color='primary' onPress={() => router.push(`/products/${item.id}`)}/>
                 </View>
                 </View>
             )} />

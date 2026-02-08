@@ -6,7 +6,8 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 const App = () => {
     // return <Redirect href="/home" />
     // return <Redirect href="/tabs" />
-    return <Redirect href="/drawer" />
+    // return <Redirect href="/drawer" />
+    return <Redirect href="/home" />
 
     // return (
     //     <SafeAreaView>
